@@ -21,7 +21,8 @@
     "cjs",
     "esm",
     "umd",
-    "src"
+    "src",
+    "tsconfig.json"
   ],
   "keywords": [
     "angular-aws3",
