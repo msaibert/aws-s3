@@ -21,7 +21,7 @@
     "cjs",
     "esm",
     "umd",
-    "dist"
+    "src"
   ],
   "keywords": [
     "angular-aws3",
