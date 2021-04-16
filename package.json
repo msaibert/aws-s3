@@ -20,7 +20,8 @@
   "files": [
     "cjs",
     "esm",
-    "umd"
+    "umd",
+    "dist"
   ],
   "keywords": [
     "angular-aws3",
