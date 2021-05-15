@@ -22,6 +22,7 @@
     "esm",
     "umd",
     "src",
+    "dist",
     "tsconfig.json"
   ],
   "keywords": [
