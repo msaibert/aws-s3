@@ -11,12 +11,11 @@ class S3Client {
     constructor(config: IConfig) {
       this.config = config;
     }
-    public async uploadFile(file: File, newFileName?: string): Promise<UploadResponse> {
+	public async uploadFile(file: File, newFileName: string): Promise<UploadResponse> {
       throwError(this.config, file);
 
       const fd = new FormData();
-      const fileExtension: string = file.type.split('/')[1];
-      const fileName: string = `${newFileName || shortId.generate()}.${fileExtension}`;
+      const fileName: string = newFileName;
       const key: string = `${this.config.dirName ? this.config.dirName + "/" : ""}${fileName}`;
       const url: string = GetUrl(this.config);
       fd.append("key", key);
